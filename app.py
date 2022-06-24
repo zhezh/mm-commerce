@@ -43,7 +43,7 @@ sd = load_checkpoint(ckpt)
 model.load_state_dict(sd, strict=True)
 
 model.eval()
-model = model.to('cuda')
+model = model.to(device)
 
 
 def inference(raw_image, strategy):
